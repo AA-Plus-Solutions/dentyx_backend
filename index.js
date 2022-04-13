@@ -6,7 +6,7 @@ dotenv.config();
 
 const MongoClient = mongodb.MongoClient;
 
-const port = process.env.port || 8000;
+const port = process.env.PORT || 8080;
 
 MongoClient.connect(
     process.env.ATLAS_URI,
